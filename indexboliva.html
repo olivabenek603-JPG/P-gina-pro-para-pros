@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tarjeta</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--Parte donde se puede cambiar el color, fuente y modo oscuro-->
+<div class="container">
+	<div class="controls">
+		<h3>Panel de Control</h3>
+		<input type="text" id="nameInput" placeholder="Nombre del usuario">
+		<input type="text" id="jobInput" placeholder="Tu cargo (ej. Estudiante)">
+	<label>Color del Banner:</label>
+    <input type="color" id="colorPicker" value="#6366f1">
+	<label>Tipo de Letra:</label>
+	<select id="fontPicker">
+ 		<option value="sans-serif">Normal</option>
+ 		<option value="serif">Elegante</option>
+ 		<option value="monospace">Código</option>
+	</select>
+			<!-- Modo oscuro -->
+<button id="darkModeBtn"> 🌙 Modo Oscuro</button> 
+	</div>
+
+	<!--Parte donde cambia el color, los nombres y cargo-->
+	<div class="card" id="profileCard">
+
+		<div class="banner"></div>
+
+		<div class="avatar"></div>
+		
+		<h2 id="displayName">Ingresa tu nombre</h2>
+		<p>Desarrollador Benek Oliva</p>
+	</div>
+</div>
+<!--Llamando archivo javascript-->
+<script src="function.js"></script>
+</body>
+</html>

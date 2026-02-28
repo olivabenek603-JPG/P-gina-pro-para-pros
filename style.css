@@ -1,0 +1,109 @@
+body{
+	font-family:sans-serif;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+	background:#f0f2f5;
+	transition: background-color 1s;
+}
+/*Esto controla la disposición de toda la página (centrado, etc)*/
+.container{
+	display:flex;
+	gap:40px;
+	align-items:center;
+}
+.card{
+	width:250px;
+	background:white ;
+	border-radius:15px;
+	overflow:hidden;
+	box-shadow:0 10px 20px rgb(0, 0, 0, 0.1);
+	text-align:center;
+	padding-bottom:20px;
+	transition: background-color 0.3s; /*tiempo de transición al regresar*/
+}
+
+/*Esto es la el cuadro que cambia de color*/
+.banner{
+	height:80px;
+	background:#6366f1;
+	transition: background-color 0.3s;
+}
+.avatar{
+	width: 80px;
+	height:80px;
+	background:#ddd;
+	border: 4px solid white;
+	border-radius:50%;
+	margin:-40px auto 10px;
+}
+/*Esto es la parte donde cambian visualmente los datos*/
+.controls{
+	background: white;
+	display: flex;
+	flex-direction:column;
+	gap:12px;
+	padding: 20px; 
+	border-radius:10px;
+	box-shadow:0 10px 20px rgb(0, 0, 0, 0.1);
+	transition: background-color 0.3s;
+}
+.input{
+	padding:10px;
+	border-radius:5px;
+	border: 1px solid #ccc;
+	transition: 0.3s;
+}
+.avatar {
+  width: 90px; height: 90px; background: #ccc;
+  border: 5px solid white; border-radius: 50%;
+  margin: -45px auto 10px;
+}
+button{
+	padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #2d3436;
+    color: white;
+    border-radius: 5px;
+}
+#fontPicker{
+	color:gray;
+}
+
+
+								/*CONFIGURACIONES DE MODO OSCURO*/
+					
+body.dark-mode #fontPicker{
+	background-color: #BBBDBD !important;
+ 	color: black !important;
+}
+
+
+body.dark-mode input::placeholder {
+  color:black;
+}
+
+body.dark-mode input{
+	background-color: #BBBDBD !important;
+ 	color: white !important;
+}
+
+body.dark-mode .card{
+ 	background-color: #333 !important;
+ 	color: white !important;
+}
+
+/*FONDO*/
+body.dark-mode{
+	background-color: #334 !important;
+	color: white !important;
+	transition: 1.5s;
+}
+/*PARTE DONDE SE CAMBIA EL NOMBRE, CARGO, ETC*/
+body.dark-mode .controls{
+ 	background-color: #333 !important;
+ 	color: white !important;
+	transition: 0,3s;
+}
